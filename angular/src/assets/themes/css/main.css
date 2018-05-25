@@ -889,3 +889,34 @@ ul{
 	margin-right: 15px;
 
 }
+
+@media (min-width: 1200px){
+
+.thumbnails > li {
+    margin-left: 0px !important;
+}
+}
+@media (min-width: 1200px){
+
+.thumbnails>li {
+    margin-left: 0px !important;
+}
+}
+@media (min-width: 1200px){
+
+.thumbnails {
+    margin-left: 0px !important;
+}
+}
+@media (min-width: 1200px){
+
+.thumbnails {
+    margin-left: 0px !important;
+}
+}
+@media (min-width: 1200px)
+{
+	.row {
+    margin-left: -15px !important;
+}
+}
