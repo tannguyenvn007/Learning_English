@@ -1,0 +1,26 @@
+<section class="navbar main-menu">
+	<div class="navbar-inner main-menu">				
+		<a  [routerLink]="['/']" class="logo pull-left"><img src="assets/themes/images/logo.png" class="site_logo" alt=""></a>
+		<nav id="menu" class="pull-right">
+			<ul>
+				<li routerLinkActive="active"><a [routerLink]="['/index']">Home</a></li>			
+				<li routerLinkActive="active"><a [routerLink]="['/detail']">Topic</a>				
+					<!-- <ul>
+						<li routerLinkActive="active"><a [routerLink]="['/index']">Human</a></li>									
+						<li routerLinkActive="active"><a [routerLink]="['/index']">Animal</a></li>
+						<li routerLinkActive="active"><a [routerLink]="['/index']">Body</a></li>									
+					</ul> -->
+				</li>															
+				<li routerLinkActive="active"><a [routerLink]="['/test']">Test</a></li>
+				<li routerLinkActive="active"><a [routerLink]="['/contact']">Contact</a></li>
+				<li routerLinkActive="active"><a [routerLink]="['/register']"><i class="fa fa-user"></i></a>
+
+					<!-- <ul >									
+						<li routerLinkActive="active"><a [routerLink]="['/login']">Sign in</a></li>
+						<li routerLinkActive="active"><a [routerLink]="['/register']">Sign up</a></li>
+					</ul> -->
+				</li>							
+			</ul>
+		</nav>
+	</div>
+</section>
