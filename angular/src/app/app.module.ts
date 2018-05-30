@@ -20,6 +20,7 @@ import { RegisterComponent } from './components/register/register.component';
 import { IndexComponent } from './components/index/index.component';
 import { DetailComponent } from './components/detail/detail.component';
 import { TestDetailComponent } from './components/test-detail/test-detail.component';
+import { DetailvocaComponent } from './components/detailvoca/detailvoca.component';
 
 
 const appRoutes :Routes = [
@@ -37,7 +38,7 @@ const appRoutes :Routes = [
     component : ContactComponent
   },
   {
-    path :'test',
+    path :'test/:id',
     component : TestComponent
   },
   {
@@ -49,7 +50,7 @@ const appRoutes :Routes = [
     component : RegisterComponent
   },
   {
-    path :'detail',
+    path :'detail/:id',
     component : DetailComponent
   }
 
@@ -65,7 +66,8 @@ const appRoutes :Routes = [
     RegisterComponent,
     IndexComponent,
     DetailComponent,
-    TestDetailComponent
+    TestDetailComponent,
+    DetailvocaComponent
   ],
   imports: [
     BrowserModule,

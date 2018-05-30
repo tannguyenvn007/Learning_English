@@ -11,7 +11,6 @@
 |
 */
 
-Route::get('/','PageController@getlist');
-Route::get('/','PageController@getlist');
+Route::get('/{id}','PageController@getOneTopic');
 
 

@@ -21,3 +21,9 @@ Route::post('admin', 'AdminController@store');
 Route::get('list1','PageController@getlistTopic1');
 Route::get('list2','PageController@getlistTopic2');
 Route::get('list3','PageController@getlistTopic3');
+Route::get('vocatopic/{id}','PageController@getVocabularyBaseOnTopic');
+Route::get('topiclist','PageController@getAllTopic');
+Route::get('onetopic/{id}','PageController@getOneTopic');
+
+
+

@@ -28,4 +28,16 @@ export class VocabularyService {
     return this._http.get(this.server+"/list3")
       .map(res => res.json());
   }
+  showVocaBaseOntopic(id){
+    return this._http.get(this.server+"/vocatopic/"+id)
+      .map(res => res.json());
+  }
+  showAlltopic(){
+    return this._http.get(this.server+"/topiclist")
+      .map(res => res.json());
+  }
+  showOnetopic(id){
+    return this._http.get(this.server+"/onetopic/"+id)
+      .map(res => res.json());
+  }
 }

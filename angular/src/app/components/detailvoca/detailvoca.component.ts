@@ -1,23 +1,16 @@
 import { Component, OnInit } from '@angular/core';
+
 import { VocabularyService } from '../../services/vocabulary.service';
 import { MessageService } from '../../services/message.service';
 import {ActivatedRoute, Params, Router } from '@angular/router';
 @Component({
-  selector: 'app-test',
-  templateUrl: './test.component.html',
-  styleUrls: ['./test.component.css']
+  selector: 'app-detailvoca',
+  templateUrl: './detailvoca.component.html',
+  styleUrls: ['./detailvoca.component.css']
 })
-export class TestComponent implements OnInit {
+export class DetailvocaComponent implements OnInit {
 
   constructor(private _vocabularyService: VocabularyService,
-              private router: Router,
-              private route: 
-              ActivatedRoute,
-              private messageService: MessageService) { }
-
-  ngOnInit() {
-  }
-constructor(private _vocabularyService: VocabularyService,
               private router: Router,
               private route: 
               ActivatedRoute,
@@ -61,4 +54,5 @@ constructor(private _vocabularyService: VocabularyService,
 
     })
   }
+
 }

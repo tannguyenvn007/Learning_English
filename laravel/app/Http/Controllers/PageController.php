@@ -18,6 +18,18 @@ class PageController extends Controller
         $vocabularies = DB::table('vocabulary')->where('id_topics',3)->get();
         return response()->json($vocabularies);
     }
+    function getAllTopic(){
+        $topic = DB::table('topics')->get();
+        return response()->json($topic);
+    }
+    function getOneTopic($id){
+        $topic = DB::table('topics')->where('id',$id)->get();
+        return response()->json($topic);
+    }
+    function getVocabularyBaseOnTopic($id){
+        $vocatopic = DB::table('vocabulary')->where('id_topics',$id)->get();
+        return response()->json($vocatopic);
+    }
 
 
 }

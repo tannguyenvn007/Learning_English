@@ -9,12 +9,7 @@
 			<div class="block">	
 				<ul class="nav nav-list">
 					<li class="nav-header">TEST TOPIC</li>
-					<li><a href="products.html">Human and relationship</a></li>
-					<li class="active"><a href="products.html">Animals</a></li>
-					<li><a href="products.html">Plants</a></li>
-					<li><a href="products.html">Families</a></li>
-					<li><a href="products.html">Company</a></li>
-					<li><a href="products.html">Information Technology</a></li>
+					<li routerLinkActive="active" *ngFor="let topic of allTopic" ><a routerLink="/test/{{topic.id}}">{{topic.name}}</a></li>
 				</ul>
 			</div>
 			<div class="block">
@@ -28,7 +23,7 @@
 		</div>						
 		<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
 			<section class="header_text sub">
-				<h4><span>People and Relationship</span></h4>
+				<h4 *ngFor="let titletopic of oneTopic" ><span>{{titletopic.name}}</span></h4>
 				<button style="margin-top: 10px" type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal">Help Box</button>
 				  <!-- Modal -->
 				  <div class="modal fade" id="myModal" role="dialog">
@@ -62,10 +57,11 @@
 			</section>
 				
 			<ul class="thumbnails listing-products">
-				<li class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<li class="col-xs-4 col-sm-4 col-md-4 col-lg-4" 
+				*ngFor="let vocabulary of vocaBaseOnTopic">
 					<div class="product-box">
 						<span class="sale_tag"></span>
-						<p><a href="product_detail.html"><img style="width: 185px;height: 150px" src="assets/themes/images/people/woman.png" alt="" /></a></p>
+						<p><a href="product_detail.html"><img style="width: 185px;height: 150px" src="assets/themes/images/vocabulary/{{vocabulary.image}}" /></a></p>
 						<form>
 							<div class="body">
 							  <label class="label">
@@ -84,183 +80,6 @@
 						</form>
 					</div>
 				</li>       
-				<li class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-					<div class="product-box">
-						<span class="sale_tag"></span>
-						<p><a href="product_detail.html"><img style="width: 185px;height: 150px" src="assets/themes/images/people/woman.png" alt="" /></a></p>
-						<form>
-							<div class="body">
-							  <label class="label">
-							    <input type="radio" class="option-input radio" name="example" checked />
-							    Radio option
-							  </label >
-							  <label class="label">
-							    <input type="radio" class="option-input radio" name="example" />
-							    Radio option
-							  </label>
-							  <label class="label">
-							    <input type="radio" class="option-input radio" name="example" />
-							    Radio option
-							  </label>
-							</div>
-						</form>
-					</div>
-				</li>
-				<li class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-					<div class="product-box">
-						<span class="sale_tag"></span>
-						<p><a href="product_detail.html"><img style="width: 185px;height: 150px" src="assets/themes/images/people/woman.png" alt="" /></a></p>
-						<form>
-							<div class="body">
-							  <label class="label">
-							    <input type="radio" class="option-input radio" name="example" checked />
-							    Radio option
-							  </label >
-							  <label class="label">
-							    <input type="radio" class="option-input radio" name="example" />
-							    Radio option
-							  </label>
-							  <label class="label">
-							    <input type="radio" class="option-input radio" name="example" />
-							    Radio option
-							  </label>
-							</div>
-						</form>
-					</div>
-				</li>
-				<li class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-					<div class="product-box">
-						<span class="sale_tag"></span>
-						<p><a href="product_detail.html"><img style="width: 185px;height: 150px" src="assets/themes/images/people/woman.png" alt="" /></a></p>
-						<form>
-							<div class="body">
-							  <label class="label">
-							    <input type="radio" class="option-input radio" name="example" checked />
-							    Radio option
-							  </label >
-							  <label class="label">
-							    <input type="radio" class="option-input radio" name="example" />
-							    Radio option
-							  </label>
-							  <label class="label">
-							    <input type="radio" class="option-input radio" name="example" />
-							    Radio option
-							  </label>
-							</div>
-						</form>
-					</div>
-				</li>
-				<li class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-					<div class="product-box">
-						<span class="sale_tag"></span>
-						<p><a href="product_detail.html"><img style="width: 185px;height: 150px" src="assets/themes/images/people/woman.png" alt="" /></a></p>
-						<form>
-							<div class="body">
-							  <label class="label">
-							    <input type="radio" class="option-input radio" name="example" checked />
-							    Radio option
-							  </label >
-							  <label class="label">
-							    <input type="radio" class="option-input radio" name="example" />
-							    Radio option
-							  </label>
-							  <label class="label">
-							    <input type="radio" class="option-input radio" name="example" />
-							    Radio option
-							  </label>
-							</div>
-						</form>
-					</div>
-				</li>   
-				<li class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-					<div class="product-box">
-						<span class="sale_tag"></span>
-						<p><a href="product_detail.html"><img style="width: 185px;height: 150px" src="assets/themes/images/people/woman.png" alt="" /></a></p>
-						<form>
-							<div class="body">
-							  <label class="label">
-							    <input type="radio" class="option-input radio" name="example" checked />
-							    Radio option
-							  </label >
-							  <label class="label">
-							    <input type="radio" class="option-input radio" name="example" />
-							    Radio option
-							  </label>
-							  <label class="label">
-							    <input type="radio" class="option-input radio" name="example" />
-							    Radio option
-							  </label>
-							</div>
-						</form>
-					</div>
-				</li>
-				<li class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-					<div class="product-box">
-						<span class="sale_tag"></span>
-						<p><a href="product_detail.html"><img style="width: 185px;height: 150px" src="assets/themes/images/people/woman.png" alt="" /></a></p>
-						<form>
-							<div class="body">
-							  <label class="label">
-							    <input type="radio" class="option-input radio" name="example" checked />
-							    Radio option
-							  </label >
-							  <label class="label">
-							    <input type="radio" class="option-input radio" name="example" />
-							    Radio option
-							  </label>
-							  <label class="label">
-							    <input type="radio" class="option-input radio" name="example" />
-							    Radio option
-							  </label>
-							</div>
-						</form>
-					</div>
-				</li>
-				<li class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-					<div class="product-box">
-						<span class="sale_tag"></span>
-						<p><a href="product_detail.html"><img style="width: 185px;height: 150px" src="assets/themes/images/people/woman.png" alt="" /></a></p>
-						<form>
-							<div class="body">
-							  <label class="label">
-							    <input type="radio" class="option-input radio" name="example" checked />
-							    Radio option
-							  </label >
-							  <label class="label">
-							    <input type="radio" class="option-input radio" name="example" />
-							    Radio option
-							  </label>
-							  <label class="label">
-							    <input type="radio" class="option-input radio" name="example" />
-							    Radio option
-							  </label>
-							</div>
-						</form>
-					</div>
-				</li>
-				<li class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-					<div class="product-box">
-						<span class="sale_tag"></span>
-						<p><a href="product_detail.html"><img style="width: 185px;height: 150px" src="assets/themes/images/people/woman.png" alt="" /></a></p>
-						<form>
-							<div class="body">
-							  <label class="label">
-							    <input type="radio" class="option-input radio" name="example" checked />
-							    Radio option
-							  </label >
-							  <label class="label">
-							    <input type="radio" class="option-input radio" name="example" />
-							    Radio option
-							  </label>
-							  <label class="label">
-							    <input type="radio" class="option-input radio" name="example" />
-							    Radio option
-							  </label>
-							</div>
-
-						</form>
-					</div>
-				</li>
 				<button style="margin-top: 10px" type="button" class="btn btn-info btn-md test pull-right" data-toggle="modal" data-target="#myModal">Finish</button>
 			</ul>								
 			<hr>

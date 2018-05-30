@@ -40,10 +40,10 @@
 									<li class="col-xs-3 col-sm-3 col-md-3 col-lg-3" *ngFor="let vocabulary of vocabulariesTopic1">
 										<div class="product-box">
 											<span class="sale_tag"></span>
-											<p><a href="product_detail.html"><img style = "width: 185px; height: 150px;" src="assets/themes/images/people/ong.jpg" alt="" /></a></p>
-											<a href="product_detail.html" class="title"> {{ vocabulary.name }} </a><br/>
-											<a href="products.html" class="category">{{ vocabulary.name }}</a>
-											<p class="price">{{ vocabulary.name }}</p>
+											<p><a routerLink="/detail/{{vocabulary.id_topics}}"><img style = "width: 185px; height: 150px;" src="assets/themes/images/vocabulary/{{vocabulary.image}}" alt="" /></a></p>
+											<a routerLink="/detail/{{vocabulary.id_topics}}"> {{ vocabulary.name }} </a><br/>
+											<a routerLink="/detail/{{vocabulary.id_topics}}" class="category">{{ vocabulary.pronuciation }}</a>
+											<p class="price">{{ vocabulary.meaning }}</p>
 										</div>
 									</li>
 								</ul>
@@ -53,10 +53,10 @@
 									<li class="col-xs-3 col-sm-3 col-md-3 col-lg-3" *ngFor="let vocabulary of vocabulariesTopic1">
 										<div class="product-box">
 											<span class="sale_tag"></span>
-											<p><a href="product_detail.html"><img style = "width: 185px; height: 150px;" src="assets/themes/images/people/ong.jpg" alt="" /></a></p>
-											<a href="product_detail.html" class="title"> {{ vocabulary.name }} </a><br/>
-											<a href="products.html" class="category">{{ vocabulary.name }}</a>
-											<p class="price">{{ vocabulary.name }}</p>
+											<p><a routerLink="/detail/{{vocabulary.id_topics}}"><img style = "width: 185px; height: 150px;" src="assets/themes/images/vocabulary/{{vocabulary.image}}" alt="" /></a></p>
+											<a routerLink="/detail/{{vocabulary.id_topics}}" class="title"> {{ vocabulary.name }} </a><br/>
+											<a href="products.html" class="category">{{ vocabulary.pronuciation }}</a>
+											<p class="price">{{ vocabulary.meaning }}</p>
 										</div>
 									</li>			
 								</ul>
@@ -82,10 +82,10 @@
 									<li class="col-xs-3 col-sm-3 col-md-3 col-lg-3" *ngFor="let vocabulary of vocabulariesTopic2">
 										<div class="product-box">
 											<span class="sale_tag"></span>
-											<p><a href="product_detail.html"><img style = "width: 185px; height: 150px;" src="assets/themes/images/people/ong.jpg" alt="" /></a></p>
-											<a href="product_detail.html" class="title"> {{ vocabulary.name }} </a><br/>
-											<a href="products.html" class="category">{{ vocabulary.name }}</a>
-											<p class="price">{{ vocabulary.name }}</p>
+											<p><a routerLink="/detail/{{vocabulary.id_topics}}"><img style = "width: 185px; height: 150px;" src="assets/themes/images/vocabulary/{{vocabulary.image}}" alt="" /></a></p>
+											<a routerLink="/detail/{{vocabulary.id_topics}}" class="title"> {{ vocabulary.name }} </a><br/>
+											<a routerLink="/detail/{{vocabulary.id_topics}}" class="category">{{ vocabulary.pronuciation }}</a>
+											<p class="price">{{ vocabulary.meaning }}</p>
 										</div>
 									</li>
 								</ul>
@@ -95,10 +95,10 @@
 									<li class="col-xs-3 col-sm-3 col-md-3 col-lg-3" *ngFor="let vocabulary of vocabulariesTopic2">
 										<div class="product-box">
 											<span class="sale_tag"></span>
-											<p><a href="product_detail.html"><img style = "width: 185px; height: 150px;" src="assets/themes/images/people/ong.jpg" alt="" /></a></p>
-											<a href="product_detail.html" class="title"> {{ vocabulary.name }} </a><br/>
-											<a href="products.html" class="category">{{ vocabulary.name }}</a>
-											<p class="price">{{ vocabulary.name }}</p>
+											<p><a routerLink="/detail/{{vocabulary.id_topics}}"><img style = "width: 185px; height: 150px;" src="assets/themes/images/vocabulary/{{vocabulary.image}}" alt="" /></a></p>
+											<a routerLink="/detail/{{vocabulary.id_topics}}" class="title"> {{ vocabulary.name }} </a><br/>
+											<a routerLink="/detail/{{vocabulary.id_topics}}" class="category">{{ vocabulary.pronuciation }}</a>
+											<p class="price">{{ vocabulary.meaning }}</p>
 										</div>
 									</li>																	
 								</ul>
@@ -146,9 +146,9 @@
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 					<h4 class="title">
-						<span class="pull-left"><span class="text"><span class="line">Topic <strong>Environment</strong></span></span></span>
+						<span class="pull-left"><span class="text"><span class="line">Topic <strong>Fruits</strong></span></span></span>
 						<span class="pull-right">
-							<a class="left button" href="#myCarousel" data-slide="prev"></a><a class="right button" href="#myCarousel" data-slide="next"></a>
+							<a class="left button" href="#myCarousel-2" data-slide="prev"></a><a class="right button" href="#myCarousel-2" data-slide="next"></a>
 						</span>
 					</h4>
 					<div id="myCarousel-2" class="myCarousel carousel slide">
@@ -159,10 +159,10 @@
 									<li class="col-xs-3 col-sm-3 col-md-3 col-lg-3" *ngFor="let vocabulary of vocabulariesTopic3">
 										<div class="product-box">
 											<span class="sale_tag"></span>
-											<p><a href="product_detail.html"><img style = "width: 185px; height: 150px;" src="assets/themes/images/people/ong.jpg" alt="" /></a></p>
-											<a href="product_detail.html" class="title"> {{ vocabulary.name }} </a><br/>
-											<a href="products.html" class="category">{{ vocabulary.name }}</a>
-											<p class="price">{{ vocabulary.name }}</p>
+											<p><a routerLink="/detail/{{vocabulary.id_topics}}"><img style = "width: 185px; height: 150px;" src="assets/themes/images/vocabulary/{{vocabulary.image}}" alt="" /></a></p>
+											<a routerLink="/detail/{{vocabulary.id_topics}}" class="title"> {{ vocabulary.name }} </a><br/>
+											<a routerLink="/detail/{{vocabulary.id_topics}}" class="category">{{ vocabulary.pronuciation }}</a>
+											<p class="price">{{ vocabulary.meaning }}</p>
 										</div>
 									</li>
 								</ul>
@@ -172,10 +172,10 @@
 									<li class="col-xs-3 col-sm-3 col-md-3 col-lg-3" *ngFor="let vocabulary of vocabulariesTopic3">
 										<div class="product-box">
 											<span class="sale_tag"></span>
-											<p><a href="product_detail.html"><img style = "width: 185px; height: 150px;" src="assets/themes/images/people/ong.jpg" alt="" /></a></p>
-											<a href="product_detail.html" class="title"> {{ vocabulary.name }} </a><br/>
-											<a href="products.html" class="category">{{ vocabulary.name }}</a>
-											<p class="price">{{ vocabulary.name }}</p>
+											<p><a routerLink="/detail/{{vocabulary.id_topics}}"><img style = "width: 185px; height: 150px;" src="assets/themes/images/vocabulary/{{vocabulary.image}}" alt="" /></a></p>
+											<a routerLink="/detail/{{vocabulary.id_topics}}" class="title"> {{ vocabulary.name }} </a><br/>
+											<a routerLink="/detail/{{vocabulary.id_topics}}" class="category">{{ vocabulary.pronuciation }}</a>
+											<p class="price">{{ vocabulary.meaning }}</p>
 										</div>
 									</li>																	
 								</ul>
@@ -183,7 +183,8 @@
 						</div>							
 					</div>
 				</div>						
-			</div>		
+			</div>
+	
 		</div>				
 	</div>
 </section>
