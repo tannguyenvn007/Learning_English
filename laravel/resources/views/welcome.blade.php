@@ -79,7 +79,10 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                @foreach ($vocabularies as $student)
+                {{$student->name}}
+
+                @endforeach
                 </div>
 
                 <div class="links">

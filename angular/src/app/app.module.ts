@@ -1,11 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule }   from '@angular/forms';
+import { HttpModule }    from '@angular/http';
+
 
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 //Thuc hien Import RouterModule, Routes
 
 import { RouterModule, Routes } from '@angular/router';
-
 
 
 import { AppComponent } from './app.component';
@@ -68,7 +70,9 @@ const appRoutes :Routes = [
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes),
-    AngularFontAwesomeModule
+    AngularFontAwesomeModule,
+    FormsModule, 
+    HttpModule
 
   ],
   providers: [],

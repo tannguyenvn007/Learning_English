@@ -37,80 +37,26 @@
 						<div class="carousel-inner">
 							<div class="active item">
 								<ul class="thumbnails">			
-									<li class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+									<li class="col-xs-3 col-sm-3 col-md-3 col-lg-3" *ngFor="let vocabulary of vocabulariesTopic1">
 										<div class="product-box">
 											<span class="sale_tag"></span>
-											<p><a href="product_detail.html"><img style="width: 185px;height: 150px" src="assets/themes/images/people/woman.png" alt="" /></a></p>
-											<a href="product_detail.html" class="title">Woman</a><br/>
-											<a href="products.html" class="category">/ˈwʊm.ən/</a>
-											<p class="price"> phụ nữ</p>
-										</div>
-									</li>
-									<li class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-										<div class="product-box">
-											<span class="sale_tag"></span>
-											<p><a href="product_detail.html"><img style="width: 185px;height: 150px" src="assets/themes/images/people/baby.png" alt="" /></a></p>
-											<a href="product_detail.html" class="title">Woman</a><br/>
-											<a href="products.html" class="category">/ˈwʊm.ən/</a>
-											<p class="price"> phụ nữ</p>
-										</div>
-									</li>
-									<li class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-										<div class="product-box">
-											<span class="sale_tag"></span>
-											<p><a href="product_detail.html"><img style="width: 185px;height: 150px" src="assets/themes/images/people/woman.png" alt="" /></a></p>
-											<a href="product_detail.html" class="title">Woman</a><br/>
-											<a href="products.html" class="category">/ˈwʊm.ən/</a>
-											<p class="price"> phụ nữ</p>
-										</div>
-									</li>
-									<li class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-										<div class="product-box">
-											<span class="sale_tag"></span>
-											<p><a href="product_detail.html"><img style="width: 185px;height: 150px" src="assets/themes/images/people/woman.png" alt="" /></a></p>
-											<a href="product_detail.html" class="title">Woman</a><br/>
-											<a href="products.html" class="category">/ˈwʊm.ən/</a>
-											<p class="price"> phụ nữ</p>
+											<p><a href="product_detail.html"><img style = "width: 185px; height: 150px;" src="assets/themes/images/people/ong.jpg" alt="" /></a></p>
+											<a href="product_detail.html" class="title"> {{ vocabulary.name }} </a><br/>
+											<a href="products.html" class="category">{{ vocabulary.name }}</a>
+											<p class="price">{{ vocabulary.name }}</p>
 										</div>
 									</li>
 								</ul>
 							</div>
 							<div class="item">
 								<ul class="thumbnails">
-									<li class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+									<li class="col-xs-3 col-sm-3 col-md-3 col-lg-3" *ngFor="let vocabulary of vocabulariesTopic1">
 										<div class="product-box">
 											<span class="sale_tag"></span>
-											<p><a href="product_detail.html"><img style="width: 185px;height: 150px" src="assets/themes/images/people/woman.png" alt="" /></a></p>
-											<a href="product_detail.html" class="title">Woman</a><br/>
-											<a href="products.html" class="category">/ˈwʊm.ən/</a>
-											<p class="price"> phụ nữ</p>
-										</div>
-									</li>
-									<li class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-										<div class="product-box">
-											<span class="sale_tag"></span>
-											<p><a href="product_detail.html"><img style="width: 185px;height: 150px" src="assets/themes/images/people/woman.png" alt="" /></a></p>
-											<a href="product_detail.html" class="title">Woman</a><br/>
-											<a href="products.html" class="category">/ˈwʊm.ən/</a>
-											<p class="price"> phụ nữ</p>
-										</div>
-									</li>
-									<li class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-										<div class="product-box">
-											<span class="sale_tag"></span>
-											<p><a href="product_detail.html"><img style="width: 185px;height: 150px" src="assets/themes/images/people/woman.png" alt="" /></a></p>
-											<a href="product_detail.html" class="title">Woman</a><br/>
-											<a href="products.html" class="category">/ˈwʊm.ən/</a>
-											<p class="price"> phụ nữ</p>
-										</div>
-									</li>
-									<li class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-										<div class="product-box">
-											<span class="sale_tag"></span>
-											<p><a href="product_detail.html"><img style="width: 185px;height: 150px" src="assets/themes/images/people/woman.png" alt="" /></a></p>
-											<a href="product_detail.html" class="title">Woman</a><br/>
-											<a href="products.html" class="category">/ˈwʊm.ən/</a>
-											<p class="price"> phụ nữ</p>
+											<p><a href="product_detail.html"><img style = "width: 185px; height: 150px;" src="assets/themes/images/people/ong.jpg" alt="" /></a></p>
+											<a href="product_detail.html" class="title"> {{ vocabulary.name }} </a><br/>
+											<a href="products.html" class="category">{{ vocabulary.name }}</a>
+											<p class="price">{{ vocabulary.name }}</p>
 										</div>
 									</li>			
 								</ul>
@@ -131,83 +77,30 @@
 					<div id="myCarousel-2" class="myCarousel carousel slide">
 						<div class="carousel-inner">
 							<div class="active item">
-								<ul class="thumbnails">												
-									<li class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+								<ul class="thumbnails">
+
+									<li class="col-xs-3 col-sm-3 col-md-3 col-lg-3" *ngFor="let vocabulary of vocabulariesTopic2">
 										<div class="product-box">
 											<span class="sale_tag"></span>
 											<p><a href="product_detail.html"><img style = "width: 185px; height: 150px;" src="assets/themes/images/people/ong.jpg" alt="" /></a></p>
-											<a href="product_detail.html" class="title">Grandfather </a><br/>
-											<a href="products.html" class="category">/ˈgrændˌfɑːðəʳ /</a>
-											<p class="price">Ông </p>
-										</div>
-									</li>
-									<li class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-										<div class="product-box">
-											<span class="sale_tag"></span>
-											<p><a href="product_detail.html"><img style = "width: 185px; height: 150px;" src="assets/themes/images/people/ong.jpg" alt="" /></a></p>
-											<a href="product_detail.html" class="title">Grandfather </a><br/>
-											<a href="products.html" class="category">/ˈgrændˌfɑːðəʳ /</a>
-											<p class="price">Ông </p>
-										</div>
-									</li>
-									<li class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-										<div class="product-box">
-											<span class="sale_tag"></span>
-											<p><a href="product_detail.html"><img style = "width: 185px; height: 150px;" src="assets/themes/images/people/ong.jpg" alt="" /></a></p>
-											<a href="product_detail.html" class="title">Grandfather </a><br/>
-											<a href="products.html" class="category">/ˈgrændˌfɑːðəʳ /</a>
-											<p class="price">Ông </p>
-										</div>
-									</li>
-									<li class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-										<div class="product-box">
-											<span class="sale_tag"></span>
-											<p><a href="product_detail.html"><img style = "width: 185px; height: 150px;" src="assets/themes/images/people/ong.jpg" alt="" /></a></p>
-											<a href="product_detail.html" class="title">Grandfather </a><br/>
-											<a href="products.html" class="category">/ˈgrændˌfɑːðəʳ /</a>
-											<p class="price">Ông </p>
+											<a href="product_detail.html" class="title"> {{ vocabulary.name }} </a><br/>
+											<a href="products.html" class="category">{{ vocabulary.name }}</a>
+											<p class="price">{{ vocabulary.name }}</p>
 										</div>
 									</li>
 								</ul>
 							</div>
 							<div class="item">
 								<ul class="thumbnails">
-									<li class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+									<li class="col-xs-3 col-sm-3 col-md-3 col-lg-3" *ngFor="let vocabulary of vocabulariesTopic2">
 										<div class="product-box">
 											<span class="sale_tag"></span>
 											<p><a href="product_detail.html"><img style = "width: 185px; height: 150px;" src="assets/themes/images/people/ong.jpg" alt="" /></a></p>
-											<a href="product_detail.html" class="title">Grandfather </a><br/>
-											<a href="products.html" class="category">/ˈgrændˌfɑːðəʳ /</a>
-											<p class="price">Ông </p>
+											<a href="product_detail.html" class="title"> {{ vocabulary.name }} </a><br/>
+											<a href="products.html" class="category">{{ vocabulary.name }}</a>
+											<p class="price">{{ vocabulary.name }}</p>
 										</div>
-									</li>
-									<li class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-										<div class="product-box">
-											<span class="sale_tag"></span>
-											<p><a href="product_detail.html"><img style = "width: 185px; height: 150px;" src="assets/themes/images/people/ong.jpg" alt="" /></a></p>
-											<a href="product_detail.html" class="title">Grandfather </a><br/>
-											<a href="products.html" class="category">/ˈgrændˌfɑːðəʳ /</a>
-											<p class="price">Ông </p>
-										</div>
-									</li>
-									<li class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-										<div class="product-box">
-											<span class="sale_tag"></span>
-											<p><a href="product_detail.html"><img style = "width: 185px; height: 150px;" src="assets/themes/images/people/ong.jpg" alt="" /></a></p>
-											<a href="product_detail.html" class="title">Grandfather </a><br/>
-											<a href="products.html" class="category">/ˈgrændˌfɑːðəʳ /</a>
-											<p class="price">Ông </p>
-										</div>
-									</li>
-									<li class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-										<div class="product-box">
-											<span class="sale_tag"></span>
-											<p><a href="product_detail.html"><img style = "width: 185px; height: 150px;" src="assets/themes/images/people/ong.jpg" alt="" /></a></p>
-											<a href="product_detail.html" class="title">Grandfather </a><br/>
-											<a href="products.html" class="category">/ˈgrændˌfɑːðəʳ /</a>
-											<p class="price">Ông </p>
-										</div>
-									</li>																																
+									</li>																	
 								</ul>
 							</div>
 						</div>							
@@ -258,86 +151,33 @@
 							<a class="left button" href="#myCarousel" data-slide="prev"></a><a class="right button" href="#myCarousel" data-slide="next"></a>
 						</span>
 					</h4>
-					<div id="myCarousel" class="myCarousel carousel slide">
+					<div id="myCarousel-2" class="myCarousel carousel slide">
 						<div class="carousel-inner">
 							<div class="active item">
-								<ul class="thumbnails">			
-									<li class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+								<ul class="thumbnails">
+
+									<li class="col-xs-3 col-sm-3 col-md-3 col-lg-3" *ngFor="let vocabulary of vocabulariesTopic3">
 										<div class="product-box">
 											<span class="sale_tag"></span>
-											<p><a href="product_detail.html"><img style="width: 185px;height: 150px" src="assets/themes/images/people/woman.png" alt="" /></a></p>
-											<a href="product_detail.html" class="title">Woman</a><br/>
-											<a href="products.html" class="category">/ˈwʊm.ən/</a>
-											<p class="price"> phụ nữ</p>
-										</div>
-									</li>
-									<li class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-										<div class="product-box">
-											<span class="sale_tag"></span>
-											<p><a href="product_detail.html"><img style="width: 185px;height: 150px" src="assets/themes/images/people/baby.png" alt="" /></a></p>
-											<a href="product_detail.html" class="title">Woman</a><br/>
-											<a href="products.html" class="category">/ˈwʊm.ən/</a>
-											<p class="price"> phụ nữ</p>
-										</div>
-									</li>
-									<li class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-										<div class="product-box">
-											<span class="sale_tag"></span>
-											<p><a href="product_detail.html"><img style="width: 185px;height: 150px" src="assets/themes/images/people/woman.png" alt="" /></a></p>
-											<a href="product_detail.html" class="title">Woman</a><br/>
-											<a href="products.html" class="category">/ˈwʊm.ən/</a>
-											<p class="price"> phụ nữ</p>
-										</div>
-									</li>
-									<li class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-										<div class="product-box">
-											<span class="sale_tag"></span>
-											<p><a href="product_detail.html"><img style="width: 185px;height: 150px" src="assets/themes/images/people/woman.png" alt="" /></a></p>
-											<a href="product_detail.html" class="title">Woman</a><br/>
-											<a href="products.html" class="category">/ˈwʊm.ən/</a>
-											<p class="price"> phụ nữ</p>
+											<p><a href="product_detail.html"><img style = "width: 185px; height: 150px;" src="assets/themes/images/people/ong.jpg" alt="" /></a></p>
+											<a href="product_detail.html" class="title"> {{ vocabulary.name }} </a><br/>
+											<a href="products.html" class="category">{{ vocabulary.name }}</a>
+											<p class="price">{{ vocabulary.name }}</p>
 										</div>
 									</li>
 								</ul>
 							</div>
 							<div class="item">
 								<ul class="thumbnails">
-									<li class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+									<li class="col-xs-3 col-sm-3 col-md-3 col-lg-3" *ngFor="let vocabulary of vocabulariesTopic3">
 										<div class="product-box">
 											<span class="sale_tag"></span>
-											<p><a href="product_detail.html"><img style="width: 185px;height: 150px" src="assets/themes/images/people/woman.png" alt="" /></a></p>
-											<a href="product_detail.html" class="title">Woman</a><br/>
-											<a href="products.html" class="category">/ˈwʊm.ən/</a>
-											<p class="price"> phụ nữ</p>
+											<p><a href="product_detail.html"><img style = "width: 185px; height: 150px;" src="assets/themes/images/people/ong.jpg" alt="" /></a></p>
+											<a href="product_detail.html" class="title"> {{ vocabulary.name }} </a><br/>
+											<a href="products.html" class="category">{{ vocabulary.name }}</a>
+											<p class="price">{{ vocabulary.name }}</p>
 										</div>
-									</li>
-									<li class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-										<div class="product-box">
-											<span class="sale_tag"></span>
-											<p><a href="product_detail.html"><img style="width: 185px;height: 150px" src="assets/themes/images/people/woman.png" alt="" /></a></p>
-											<a href="product_detail.html" class="title">Woman</a><br/>
-											<a href="products.html" class="category">/ˈwʊm.ən/</a>
-											<p class="price"> phụ nữ</p>
-										</div>
-									</li>
-									<li class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-										<div class="product-box">
-											<span class="sale_tag"></span>
-											<p><a href="product_detail.html"><img style="width: 185px;height: 150px" src="assets/themes/images/people/woman.png" alt="" /></a></p>
-											<a href="product_detail.html" class="title">Woman</a><br/>
-											<a href="products.html" class="category">/ˈwʊm.ən/</a>
-											<p class="price"> phụ nữ</p>
-										</div>
-									</li>
-									<li class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-										<div class="product-box">
-											<span class="sale_tag"></span>
-											<p><a href="product_detail.html"><img style="width: 185px;height: 150px" src="assets/themes/images/people/woman.png" alt="" /></a></p>
-											<a href="product_detail.html" class="title">Woman</a><br/>
-											<a href="products.html" class="category">/ˈwʊm.ən/</a>
-											<p class="price"> phụ nữ</p>
-										</div>
-									</li>			
+									</li>																	
 								</ul>
 							</div>
 						</div>							
