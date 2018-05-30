@@ -40,4 +40,10 @@ export class VocabularyService {
     return this._http.get(this.server+"/onetopic/"+id)
       .map(res => res.json());
   }
+  addContact(info){
+    var data = json.stringify(info);
+    return this._http.post(this.server+"/contact",data,this.options)
+      .map(res => res.json());
+  }
+
 }

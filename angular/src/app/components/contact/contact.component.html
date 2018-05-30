@@ -28,37 +28,37 @@
 			<h4 class="title">
 					<span class="pull-left"><span class="text"><span class="line"><strong>Contact Form </strong></span></span></span>
 			</h4>
-			<form method="post" action="#">
+			<form  method="post" #addContactForm="ngForm" (submit)="addContact()">
 				<fieldset>
 					<div class="form-group">
 						<label for="name"><span>Name:</span></label>
 						<div class="input">
-							<input tabindex="1" size="18" id="name" name="name" type="text" value="" class="form-control" placeholder="Name">
+							<input tabindex="1" size="18" id="name" name="name" type="text" value="" class="form-control" placeholder="Name" [(ngModel)]="model.name" #name="ngModel">
 						</div>
 					</div>
 					
 					<div class="form-group">
 						<label for="email"><span>Email:</span></label>
 						<div class="input">
-							<input tabindex="2" size="25" id="email" name="email" type="text" value="" class="form-control" placeholder="Email Address">
+							<input tabindex="2" size="25" id="email" name="email" type="text" value="" class="form-control" placeholder="Email Address" [(ngModel)]="model.email" #email="ngModel">
 						</div>
 					</div>
 					<div class="form-group">
-						<label for="email"><span>Subject:</span></label>
+						<label for="subject"><span>Subject:</span></label>
 						<div class="input">
-							<input tabindex="2" size="25" id="email" name="email" type="text" value="" class="form-control" placeholder="Subject">
+							<input tabindex="2" size="25" id="subject" name="subject" type="text" value="" class="form-control" placeholder="Subject" [(ngModel)]="model.subject" #subject="ngModel">
 						</div>
 					</div>
 					
 					<div class="form-group">
 						<label for="message"><span>Message:</span></label>
 						<div class="input">
-							<textarea tabindex="3" class="form-control" id="message" name="body" rows="7" placeholder="Message"></textarea>
+							<textarea tabindex="3" class="form-control" id="message" name="message" rows="7" placeholder="Message" [(ngModel)]="model.message" #message="ngModel"></textarea>
 						</div>
 					</div>
 					
 					<div class="actions">
-						<button style="background: #eb4800;" tabindex="3" type="submit" class="btn btn-inverse">Send message</button>
+						<button style="background: #eb4800;" [disabled]="!addContactForm.form.valid" tabindex="3" type="submit" class="btn btn-inverse">Send message</button>
 					</div>
 				</fieldset>
 			</form>

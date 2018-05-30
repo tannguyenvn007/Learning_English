@@ -24,6 +24,7 @@ Route::get('list3','PageController@getlistTopic3');
 Route::get('vocatopic/{id}','PageController@getVocabularyBaseOnTopic');
 Route::get('topiclist','PageController@getAllTopic');
 Route::get('onetopic/{id}','PageController@getOneTopic');
+Route::get('contact','PageController@addContact');
 
 
 

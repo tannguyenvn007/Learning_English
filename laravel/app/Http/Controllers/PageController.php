@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use App\Vocabulary;
 use Illuminate\Http\Request;
 use DB;
+use App\Contact;
 class PageController extends Controller
 {
     function getlistTopic2(){
@@ -30,6 +31,15 @@ class PageController extends Controller
         $vocatopic = DB::table('vocabulary')->where('id_topics',$id)->get();
         return response()->json($vocatopic);
     }
-
+    function addContact(Request $req){
+        $contact = new Contact;
+        $contact->name = $req->Input('name');
+        $contact->email = $req->Input('email');
+        $contact->subject = $req->Input('subject');
+        $contact->message = $req->Input('message');
+        $contact->save();
+        $response= array('response' =>'contact added' ,'success'=>true );
+        return $response;
+    }
 
 }
